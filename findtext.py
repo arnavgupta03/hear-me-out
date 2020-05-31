@@ -47,9 +47,10 @@ def main():
     for i, slide in enumerate(slides):
         for el in slide.get('pageElements', []):
             #print(slide.get())
-            for textElement in el['shape']['text']['textElements']:
-                if (el['shape']['text']['textElements'].index(textElement)%2==1):
-                   print(textElement['textRun']['content'])
+            if el['shape']['shapeType']=='TEXT_BOX':
+                for textElement in el['shape']['text']['textElements']:
+                    if (el['shape']['text']['textElements'].index(textElement)%2==1):
+                       print(textElement['textRun']['content'])
         
         # print('- Slide #{} contains {} elements.'.format(
             #i + 1, slide.get('pageElements.shape.text.textElements.textRun.content')))
