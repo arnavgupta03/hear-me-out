@@ -4,14 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>This is HearMeOut</title>
+    <link rel="stylesheet" href="HearMeOut.css">
+    <img src = "HearMeOut.PNG" height = "100" width = "300">
+    <hr>
 </head>
 <body>
-    <h1>"Welcome to HearMeOut"</h1>
-    <hr>
-    <label for="myfile">Select a .txt file:</label>
-    <input type = "file" id = "myfile" name = "myfile">
-    <hr>
-    <label for="mylink">Please provide a Google Slides sharing link:</label>
-    <input type = "url" id = "mylink" name = "mylink">
+    <h1>Welcome to HearMeOut</h1>
+    <br>
+    <p>Please select one of the options:</p>
+    <div id = "div1">
+    <label for="txtFile">Select a .txt file:</label>
+    <input type = "file" id = "txtFile" name = "txtFile">
+    </div>
+    <div id = "div2">
+    <label for="slideLink">Please provide a Google Slides Presentation ID:</label>
+    <input type = "url" id = "slideLink" name = "slideLink">
+    </div>
+    <script src="HearMeOut.js"></script>
 </body>
 </html>
